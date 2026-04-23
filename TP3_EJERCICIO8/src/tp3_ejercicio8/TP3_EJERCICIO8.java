@@ -1,20 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package tp3_ejercicio8;
 
-/**
- *
- * @author shefa
- */
+package tp3_ejercicio8;
+import java.util.Scanner;
 public class TP3_EJERCICIO8 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+       Scanner lector = new Scanner(System.in);
+       
+        char caracter;
+       
+        do {
+            System.out.println("Ingrese careacter :");
+       
+            caracter = lector.nextLine().charAt(0);
+           
+            if((caracter == 'a' )|| (caracter == 'e') || (caracter == 'i') || (caracter == 'o') || (caracter == 'u')){
+              System.out.println("El caracter es vocal");
+ 
+
+
+
+
+            }else{
+               System.out.println("El caracter no es vocal");
+            }
+        }
+        while (caracter != '0' );  
+       
+
     }
     
 }
