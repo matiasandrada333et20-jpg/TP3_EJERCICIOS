@@ -1,20 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
+
 package tp3_ejercicio9;
 
-/**
- *
- * @author shefa
- */
+import java.util.Scanner;
+
 public class TP3_EJERCICIO9 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+  
+  public static void main(String[] args) {
+    Scanner lector = new Scanner(System.in);
+   double  a; 
+   int b; 
+    System.out.println("ingrese numero real:");
+    a = lector.nextDouble();
+       do{  
+    System.out.println("ingrese numero positivo:");
+       b = lector.nextInt();
+         if( b<=0){
+         System.out.println("vuelva a ingresar numero positivo:");
+         }
+     }while(b<=0 );
+    int base = (int) a;
+    int exponente = b;
+    long resultado = 1;
+    for (int i = 0; i < exponente; i++) {
+      resultado *= base; 
 }
+System.out.println(resultado);
+       }
+    }
