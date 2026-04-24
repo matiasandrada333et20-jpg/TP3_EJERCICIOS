@@ -1,20 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package tp3_ejercicio10;
 
-/**
- *
  * @author shefa
- */
+package tp3_ejercicio10;
+import java.util.Scanner;
 public class TP3_EJERCICIO10 {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+  Scanner lector = new Scanner(System.in);
+
+        double pago = 5;
+        double total = 0;
+        int meses;
+
+        System.out.println("Ingrese cantidad de meses:");
+        meses = lector.nextInt();
+
+        for(int i = 1; i <= meses; i++) {
+            System.out.println("Mes " + i + ": " + pago);
+
+            total = total + pago;
+
+            pago = pago * 2;
+        }
+
+        System.out.println("La cantidad total es " + total);
+    }
+}
+
+
     }
     
 }
